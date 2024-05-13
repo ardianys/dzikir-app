@@ -31,11 +31,25 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
+  int _counter1 = 0;
+  int _counter2 = 0;
+  int _counter3 = 0;
 
-  void _incrementCounter() {
+  void _incrementCounter1() {
     setState(() {
-      _counter++;
+      _counter1++;
+    });
+  }
+
+  void _incrementCounter2() {
+    setState(() {
+      _counter2++;
+    });
+  }
+
+  void _incrementCounter3() {
+    setState(() {
+      _counter3++;
     });
   }
 
@@ -47,24 +61,70 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: <Widget>[
-            const Text(
-              'How S times:',
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                const Text(
+                  'Subhanallah',
+                ),
+                Text(
+                  '$_counter1',
+                  style: Theme.of(context).textTheme.headline4,
+                ),
+                const Divider(
+                  height: 20,
+                ),
+                const Text(
+                  'Alhamdulillah',
+                ),
+                Text(
+                  '$_counter2',
+                  style: Theme.of(context).textTheme.headline4,
+                ),
+                const Divider(
+                  height: 20,
+                ),
+                const Text(
+                  'Allahu Akbar',
+                ),
+                Text(
+                  '$_counter3',
+                  style: Theme.of(context).textTheme.headline4,
+                ),
+              ],
             ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headlineMedium,
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                FloatingActionButton(
+                  onPressed: _incrementCounter1,
+                  tooltip: 'Increment',
+                  child: const Icon(Icons.add),
+                ),
+                const Divider(
+                  height: 20,
+                ),
+                FloatingActionButton(
+                  onPressed: _incrementCounter2,
+                  tooltip: 'Increment',
+                  child: const Icon(Icons.add),
+                ),
+                const Divider(
+                  height: 20,
+                ),
+                FloatingActionButton(
+                  onPressed: _incrementCounter3,
+                  tooltip: 'Increment',
+                  child: const Icon(Icons.add),
+                ),
+              ],
             ),
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }
