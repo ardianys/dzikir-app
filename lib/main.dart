@@ -66,9 +66,11 @@ class _MyHomePageState extends State<MyHomePage> {
         children: <Widget>[
           ElevatedButton(
             onPressed: () {
-              _incrementCounter1();
-              final player = AudioPlayer();
-              player.play(AssetSource('audio/1.mp3'));
+              if (_counter1 < 33) {
+                _incrementCounter1();
+                final player = AudioPlayer();
+                player.play(AssetSource('audio/1.mp3'));
+              }
             },
             style: ElevatedButton.styleFrom(
               padding: EdgeInsets.all(40.0), // Sesuaikan dengan kebutuhan
@@ -87,9 +89,11 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
           ElevatedButton(
             onPressed: () {
-              _incrementCounter2();
-              final player = AudioPlayer();
-              player.play(AssetSource('audio/2.mp3'));
+              if (_counter2 < 33) {
+                _incrementCounter2();
+                final player = AudioPlayer();
+                player.play(AssetSource('audio/2.mp3'));
+              }
             },
             style: ElevatedButton.styleFrom(
               padding: EdgeInsets.all(40.0), // Sesuaikan dengan kebutuhan
@@ -108,9 +112,11 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
           ElevatedButton(
             onPressed: () {
-              _incrementCounter3();
-              final player = AudioPlayer();
-              player.play(AssetSource('audio/3.mp3'));
+              if (_counter3 < 33) {
+                _incrementCounter3();
+                final player = AudioPlayer();
+                player.play(AssetSource('audio/3.mp3'));
+              }
             },
             style: ElevatedButton.styleFrom(
               padding: EdgeInsets.all(40.0), // Sesuaikan dengan kebutuhan
