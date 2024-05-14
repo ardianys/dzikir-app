@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:audioplayers/audioplayers.dart';
 
 void main() {
   runApp(const MyApp());
@@ -60,70 +61,70 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title),
       ),
-      body: Center(
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: <Widget>[
-            Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                const Text(
-                  'Subhanallah',
-                ),
-                Text(
-                  '$_counter1',
-                  style: Theme.of(context).textTheme.headline4,
-                ),
-                const Divider(
-                  height: 20,
-                ),
-                const Text(
-                  'Alhamdulillah',
-                ),
-                Text(
-                  '$_counter2',
-                  style: Theme.of(context).textTheme.headline4,
-                ),
-                const Divider(
-                  height: 20,
-                ),
-                const Text(
-                  'Allahu Akbar',
-                ),
-                Text(
-                  '$_counter3',
-                  style: Theme.of(context).textTheme.headline4,
-                ),
-              ],
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.end,
+        children: <Widget>[
+          ElevatedButton(
+            onPressed: () {
+              _incrementCounter1();
+              final player = AudioPlayer();
+              player.play(AssetSource('audio/1.mp3'));
+            },
+            style: ElevatedButton.styleFrom(
+              padding: EdgeInsets.all(40.0), // Sesuaikan dengan kebutuhan
+              shape: RoundedRectangleBorder(
+                borderRadius:
+                    BorderRadius.circular(30.0), // Sesuaikan dengan kebutuhan
+              ),
             ),
-            Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                FloatingActionButton(
-                  onPressed: _incrementCounter1,
-                  tooltip: 'Increment',
-                  child: const Icon(Icons.add),
-                ),
-                const Divider(
-                  height: 20,
-                ),
-                FloatingActionButton(
-                  onPressed: _incrementCounter2,
-                  tooltip: 'Increment',
-                  child: const Icon(Icons.add),
-                ),
-                const Divider(
-                  height: 20,
-                ),
-                FloatingActionButton(
-                  onPressed: _incrementCounter3,
-                  tooltip: 'Increment',
-                  child: const Icon(Icons.add),
-                ),
-              ],
+            child: Text(
+              'Subhanallah $_counter1',
+              style: TextStyle(fontSize: 20.0), // Sesuaikan dengan kebutuhan
             ),
-          ],
-        ),
+          ),
+          const Divider(
+            height: 20,
+          ),
+          ElevatedButton(
+            onPressed: () {
+              _incrementCounter2();
+              final player = AudioPlayer();
+              player.play(AssetSource('audio/2.mp3'));
+            },
+            style: ElevatedButton.styleFrom(
+              padding: EdgeInsets.all(40.0), // Sesuaikan dengan kebutuhan
+              shape: RoundedRectangleBorder(
+                borderRadius:
+                    BorderRadius.circular(30.0), // Sesuaikan dengan kebutuhan
+              ),
+            ),
+            child: Text(
+              'Alhamdulillah $_counter2',
+              style: TextStyle(fontSize: 20.0), // Sesuaikan dengan kebutuhan
+            ),
+          ),
+          const Divider(
+            height: 20,
+          ),
+          ElevatedButton(
+            onPressed: () {
+              _incrementCounter3();
+              final player = AudioPlayer();
+              player.play(AssetSource('audio/3.mp3'));
+            },
+            style: ElevatedButton.styleFrom(
+              padding: EdgeInsets.all(40.0), // Sesuaikan dengan kebutuhan
+              shape: RoundedRectangleBorder(
+                borderRadius:
+                    BorderRadius.circular(30.0), // Sesuaikan dengan kebutuhan
+              ),
+            ),
+            child: Text(
+              'Allahu Akbar $_counter3',
+              style: TextStyle(fontSize: 20.0), // Sesuaikan dengan kebutuhan
+            ),
+          ),
+        ],
       ),
     );
   }
