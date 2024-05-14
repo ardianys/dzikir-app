@@ -54,6 +54,14 @@ class _MyHomePageState extends State<MyHomePage> {
     });
   }
 
+  void _reset() {
+    setState(() {
+      _counter1 = 0;
+      _counter2 = 0;
+      _counter3 = 0;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -127,6 +135,25 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             child: Text(
               'Allahu Akbar $_counter3',
+              style: TextStyle(fontSize: 20.0), // Sesuaikan dengan kebutuhan
+            ),
+          ),
+          const Divider(
+            height: 20,
+          ),
+          ElevatedButton(
+            onPressed: () {
+              _reset();
+            },
+            style: ElevatedButton.styleFrom(
+              padding: EdgeInsets.all(40.0), // Sesuaikan dengan kebutuhan
+              shape: RoundedRectangleBorder(
+                borderRadius:
+                    BorderRadius.circular(30.0), // Sesuaikan dengan kebutuhan
+              ),
+            ),
+            child: Text(
+              'reset',
               style: TextStyle(fontSize: 20.0), // Sesuaikan dengan kebutuhan
             ),
           ),
