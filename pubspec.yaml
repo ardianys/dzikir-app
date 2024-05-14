@@ -67,6 +67,9 @@ flutter:
     - assets/img/poli.png
     - assets/img/tayo.png
     - assets/img/wing.png
+    - assets/img/toy0.png
+    - assets/img/toy1.png
+    - assets/img/toy2.png
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 

@@ -93,7 +93,7 @@ class _MyHomePageState extends State<MyHomePage> {
               mainAxisSize:
                   MainAxisSize.min, // To keep the Row as big as its children
               children: <Widget>[
-                Image.asset('assets/img/poli.png',
+                Image.asset("assets/img/toy$_counter1}.png",
                     width: 80, height: 80), // Adjust the size as needed
                 const SizedBox(width: 10), // Space between image and text
                 Text(
