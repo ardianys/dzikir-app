@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:audioplayers/audioplayers.dart';
+import 'package:flutter/services.dart';
 
 void main() {
   runApp(const MyApp());
@@ -79,6 +80,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 _incrementCounter1();
                 final player = AudioPlayer();
                 player.play(AssetSource('audio/1.mp3'));
+                HapticFeedback.lightImpact();
               }
             },
             style: ElevatedButton.styleFrom(
@@ -100,6 +102,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 _incrementCounter2();
                 final player = AudioPlayer();
                 player.play(AssetSource('audio/2.mp3'));
+                HapticFeedback.mediumImpact();
               }
             },
             style: ElevatedButton.styleFrom(
@@ -121,6 +124,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 _incrementCounter3();
                 final player = AudioPlayer();
                 player.play(AssetSource('audio/3.mp3'));
+                HapticFeedback.heavyImpact();
               }
             },
             style: ElevatedButton.styleFrom(
