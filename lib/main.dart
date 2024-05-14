@@ -84,16 +84,23 @@ class _MyHomePageState extends State<MyHomePage> {
               }
             },
             style: ElevatedButton.styleFrom(
-              padding: const EdgeInsets.all(40.0), // Sesuaikan dengan kebutuhan
+              padding: const EdgeInsets.all(40.0),
               shape: RoundedRectangleBorder(
-                borderRadius:
-                    BorderRadius.circular(10.0), // Sesuaikan dengan kebutuhan
+                borderRadius: BorderRadius.circular(10.0),
               ),
             ),
-            child: Text(
-              'Subhanallah $_counter1',
-              style:
-                  const TextStyle(fontSize: 20.0), // Sesuaikan dengan kebutuhan
+            child: Row(
+              mainAxisSize:
+                  MainAxisSize.min, // To keep the Row as big as its children
+              children: <Widget>[
+                Image.asset('assets/img/poli.png',
+                    width: 80, height: 80), // Adjust the size as needed
+                const SizedBox(width: 10), // Space between image and text
+                Text(
+                  'Subhanallah $_counter1',
+                  style: const TextStyle(fontSize: 20.0),
+                ),
+              ],
             ),
           ),
           const SizedBox(height: 10),
@@ -107,16 +114,23 @@ class _MyHomePageState extends State<MyHomePage> {
               }
             },
             style: ElevatedButton.styleFrom(
-              padding: const EdgeInsets.all(40.0), // Sesuaikan dengan kebutuhan
+              padding: const EdgeInsets.all(40.0),
               shape: RoundedRectangleBorder(
-                borderRadius:
-                    BorderRadius.circular(10.0), // Sesuaikan dengan kebutuhan
+                borderRadius: BorderRadius.circular(10.0),
               ),
             ),
-            child: Text(
-              'Alhamdulillah $_counter2',
-              style:
-                  const TextStyle(fontSize: 20.0), // Sesuaikan dengan kebutuhan
+            child: Row(
+              mainAxisSize:
+                  MainAxisSize.min, // To keep the Row as big as its children
+              children: <Widget>[
+                Image.asset('assets/img/tayo.png',
+                    width: 80, height: 80), // Adjust the size as needed
+                const SizedBox(width: 10), // Space between image and text
+                Text(
+                  'Alhamdulillah $_counter2',
+                  style: const TextStyle(fontSize: 20.0),
+                ),
+              ],
             ),
           ),
           const SizedBox(height: 10),
@@ -130,16 +144,23 @@ class _MyHomePageState extends State<MyHomePage> {
               }
             },
             style: ElevatedButton.styleFrom(
-              padding: const EdgeInsets.all(40.0), // Sesuaikan dengan kebutuhan
+              padding: const EdgeInsets.all(40.0),
               shape: RoundedRectangleBorder(
-                borderRadius:
-                    BorderRadius.circular(10.0), // Sesuaikan dengan kebutuhan
+                borderRadius: BorderRadius.circular(10.0),
               ),
             ),
-            child: Text(
-              'Allahu Akbar $_counter3',
-              style:
-                  const TextStyle(fontSize: 20.0), // Sesuaikan dengan kebutuhan
+            child: Row(
+              mainAxisSize:
+                  MainAxisSize.min, // To keep the Row as big as its children
+              children: <Widget>[
+                Image.asset('assets/img/wing.png',
+                    width: 80, height: 80), // Adjust the size as needed
+                const SizedBox(width: 10), // Space between image and text
+                Text(
+                  'Allahu Akbar $_counter3',
+                  style: const TextStyle(fontSize: 20.0),
+                ),
+              ],
             ),
           ),
           const SizedBox(height: 10),
@@ -148,15 +169,14 @@ class _MyHomePageState extends State<MyHomePage> {
               _reset();
             },
             style: ElevatedButton.styleFrom(
-              padding: const EdgeInsets.all(10.0), // Sesuaikan dengan kebutuhan
+              padding: const EdgeInsets.all(10.0),
               shape: RoundedRectangleBorder(
-                borderRadius:
-                    BorderRadius.circular(10.0), // Sesuaikan dengan kebutuhan
+                borderRadius: BorderRadius.circular(10.0),
               ),
             ),
             child: const Text(
               'ulangi',
-              style: TextStyle(fontSize: 20.0), // Sesuaikan dengan kebutuhan
+              style: TextStyle(fontSize: 20.0),
             ),
           ),
         ],
