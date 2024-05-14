@@ -71,6 +71,7 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.end,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
           ElevatedButton(
             onPressed: () {
@@ -84,7 +85,7 @@ class _MyHomePageState extends State<MyHomePage> {
               padding: EdgeInsets.all(40.0), // Sesuaikan dengan kebutuhan
               shape: RoundedRectangleBorder(
                 borderRadius:
-                    BorderRadius.circular(30.0), // Sesuaikan dengan kebutuhan
+                    BorderRadius.circular(10.0), // Sesuaikan dengan kebutuhan
               ),
             ),
             child: Text(
@@ -92,9 +93,7 @@ class _MyHomePageState extends State<MyHomePage> {
               style: TextStyle(fontSize: 20.0), // Sesuaikan dengan kebutuhan
             ),
           ),
-          const Divider(
-            height: 20,
-          ),
+          const SizedBox(height: 10),
           ElevatedButton(
             onPressed: () {
               if (_counter2 < 33) {
@@ -107,7 +106,7 @@ class _MyHomePageState extends State<MyHomePage> {
               padding: EdgeInsets.all(40.0), // Sesuaikan dengan kebutuhan
               shape: RoundedRectangleBorder(
                 borderRadius:
-                    BorderRadius.circular(30.0), // Sesuaikan dengan kebutuhan
+                    BorderRadius.circular(10.0), // Sesuaikan dengan kebutuhan
               ),
             ),
             child: Text(
@@ -115,9 +114,7 @@ class _MyHomePageState extends State<MyHomePage> {
               style: TextStyle(fontSize: 20.0), // Sesuaikan dengan kebutuhan
             ),
           ),
-          const Divider(
-            height: 20,
-          ),
+          const SizedBox(height: 10),
           ElevatedButton(
             onPressed: () {
               if (_counter3 < 33) {
@@ -130,7 +127,7 @@ class _MyHomePageState extends State<MyHomePage> {
               padding: EdgeInsets.all(40.0), // Sesuaikan dengan kebutuhan
               shape: RoundedRectangleBorder(
                 borderRadius:
-                    BorderRadius.circular(30.0), // Sesuaikan dengan kebutuhan
+                    BorderRadius.circular(10.0), // Sesuaikan dengan kebutuhan
               ),
             ),
             child: Text(
@@ -138,22 +135,20 @@ class _MyHomePageState extends State<MyHomePage> {
               style: TextStyle(fontSize: 20.0), // Sesuaikan dengan kebutuhan
             ),
           ),
-          const Divider(
-            height: 20,
-          ),
+          const SizedBox(height: 10),
           ElevatedButton(
             onPressed: () {
               _reset();
             },
             style: ElevatedButton.styleFrom(
-              padding: EdgeInsets.all(40.0), // Sesuaikan dengan kebutuhan
+              padding: EdgeInsets.all(10.0), // Sesuaikan dengan kebutuhan
               shape: RoundedRectangleBorder(
                 borderRadius:
-                    BorderRadius.circular(30.0), // Sesuaikan dengan kebutuhan
+                    BorderRadius.circular(10.0), // Sesuaikan dengan kebutuhan
               ),
             ),
             child: Text(
-              'reset',
+              'ulangi',
               style: TextStyle(fontSize: 20.0), // Sesuaikan dengan kebutuhan
             ),
           ),
