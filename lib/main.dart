@@ -84,7 +84,7 @@ class _MyHomePageState extends State<MyHomePage> {
               }
             },
             style: ElevatedButton.styleFrom(
-              padding: EdgeInsets.all(40.0), // Sesuaikan dengan kebutuhan
+              padding: const EdgeInsets.all(40.0), // Sesuaikan dengan kebutuhan
               shape: RoundedRectangleBorder(
                 borderRadius:
                     BorderRadius.circular(10.0), // Sesuaikan dengan kebutuhan
@@ -92,7 +92,8 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             child: Text(
               'Subhanallah $_counter1',
-              style: TextStyle(fontSize: 20.0), // Sesuaikan dengan kebutuhan
+              style:
+                  const TextStyle(fontSize: 20.0), // Sesuaikan dengan kebutuhan
             ),
           ),
           const SizedBox(height: 10),
@@ -106,7 +107,7 @@ class _MyHomePageState extends State<MyHomePage> {
               }
             },
             style: ElevatedButton.styleFrom(
-              padding: EdgeInsets.all(40.0), // Sesuaikan dengan kebutuhan
+              padding: const EdgeInsets.all(40.0), // Sesuaikan dengan kebutuhan
               shape: RoundedRectangleBorder(
                 borderRadius:
                     BorderRadius.circular(10.0), // Sesuaikan dengan kebutuhan
@@ -114,7 +115,8 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             child: Text(
               'Alhamdulillah $_counter2',
-              style: TextStyle(fontSize: 20.0), // Sesuaikan dengan kebutuhan
+              style:
+                  const TextStyle(fontSize: 20.0), // Sesuaikan dengan kebutuhan
             ),
           ),
           const SizedBox(height: 10),
@@ -128,7 +130,7 @@ class _MyHomePageState extends State<MyHomePage> {
               }
             },
             style: ElevatedButton.styleFrom(
-              padding: EdgeInsets.all(40.0), // Sesuaikan dengan kebutuhan
+              padding: const EdgeInsets.all(40.0), // Sesuaikan dengan kebutuhan
               shape: RoundedRectangleBorder(
                 borderRadius:
                     BorderRadius.circular(10.0), // Sesuaikan dengan kebutuhan
@@ -136,7 +138,8 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             child: Text(
               'Allahu Akbar $_counter3',
-              style: TextStyle(fontSize: 20.0), // Sesuaikan dengan kebutuhan
+              style:
+                  const TextStyle(fontSize: 20.0), // Sesuaikan dengan kebutuhan
             ),
           ),
           const SizedBox(height: 10),
@@ -145,13 +148,13 @@ class _MyHomePageState extends State<MyHomePage> {
               _reset();
             },
             style: ElevatedButton.styleFrom(
-              padding: EdgeInsets.all(10.0), // Sesuaikan dengan kebutuhan
+              padding: const EdgeInsets.all(10.0), // Sesuaikan dengan kebutuhan
               shape: RoundedRectangleBorder(
                 borderRadius:
                     BorderRadius.circular(10.0), // Sesuaikan dengan kebutuhan
               ),
             ),
-            child: Text(
+            child: const Text(
               'ulangi',
               style: TextStyle(fontSize: 20.0), // Sesuaikan dengan kebutuhan
             ),
